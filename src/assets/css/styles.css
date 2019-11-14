@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kanit;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+}
+
+.topMargin{
+    margin-top: 150px;
+    text-align: center;
+}
+.navbar-custom{
+    height: 114px;
+    background: rgb(224, 213, 205);
+}
+/* Navbar */
+.navbarLink{
+    padding-top: 30px;
+    text-decoration: none !important;
+    /* padding-bottom: 30px;
+    padding-right: 40px; */
+    padding-left:150px;
+    padding-right:150px;
+    display: inline-block; 
+}
+.navbarLink :hover{
+    text-decoration: none !important;
+    display: inline-block; 
+}

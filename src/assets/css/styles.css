@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,28 +9,90 @@
 
 @font-face {
     font-family: "Kanit";
-    src: url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 }
 
 .topMargin{
-    margin-top: 150px;
+    margin-top: 80px;
     text-align: center;
 }
-.navbar-custom{
-    height: 114px;
-    background: rgb(224, 213, 205);
-}
-/* Navbar */
-.navbarLink{
-    padding-top: 30px;
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top:0;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #555;
     text-decoration: none !important;
-    /* padding-bottom: 30px;
-    padding-right: 40px; */
-    padding-left:150px;
-    padding-right:150px;
-    display: inline-block; 
-}
-.navbarLink :hover{
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    transition: 2s;
     text-decoration: none !important;
-    display: inline-block; 
-}
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 1199.98px) {
+    .sidebar {
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left; font-size: 12px ;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+  .wrapper-card-img{
+    position: relative; 
+    /* ไม่กระโดด */
+    overflow: hidden; 
+    /* ซ่อนภาพ*/
+  }
+  /* Card */
+  .wrapper-card-img::after{
+    content:'';
+    padding-top:56.25%;
+    display: block;
+    height: 0;
+    
+  }
+  
+  .wrapper-card-img img{
+    position: absolute !important;
+    top: 0;
+  }
+  .wrapper-card-img img:hover{
+    opacity: 0.4;
+    transition: 2s;
+  }
+  .shadows{
+      box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.5);
+  }

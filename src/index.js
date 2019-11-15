@@ -9,4 +9,5 @@ import Reducer from './Reducer/reducer';
 const store = createStore(Reducer);
 
 ReactDOM.render(
+    
 <Provider store={store}><App /></Provider>, document.getElementById('root'));

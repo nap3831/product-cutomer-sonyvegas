@@ -1,26 +1,17 @@
+
 const initState = {
-    addedItems: [],
-    allCost: 0,
-    piece:0,
+    pathName : ""
 
 }
 const CartReducer = (state = initState, action) => {
     switch (action.type) {
-        case 'ADD_Item':
-            return {
+        case'pathName':
+            return{
                 ...state,
-                addedItems: [...state.addedItems, action.payload],
+                pathName:state.pathName = action.payload
+
             }
-        case 'TotalCost':
-            return {
-                ...state,
-                allCost: state.allCost += action.payload
-            }
-        case 'TotalPiece':
-            return {
-                ...state,
-                piece: state.piece += action.payload
-            }
+  
                 default:
             return state
     }

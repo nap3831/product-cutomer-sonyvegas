@@ -17,14 +17,11 @@ class ReactYoutube extends React.Component {
     const opts = {
       height: '320',
       width: '100%',
-      playerVars: {
-        autoplay: 1
-      }
     };
     const { videoId } = this.props;
     return (
         <YouTube
-          videoId={videoId}
+        videoId={videoId}
           opts={opts}
           onReady={this.VideoOnReady}
         />

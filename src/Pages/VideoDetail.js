@@ -22,15 +22,18 @@ class VideoDetail extends Component {
         ]
         return (
             <React.Fragment>
-                <div className="container">
+                <div className="container container-tutorial-video mb-5">
                     <div className="topMargin row">
+                        <div className="col-12 my-5 text-success">
+                        ขณะนี้กำลังชมวีดีโอ <span style={{borderBottom:'2px dashed red',width:'20px'}}>ตอนที่ {this.props.match.params.id} </span>   
+                        </div>
                         <div className="col-md-6">
-                            <ReactYoutube videoId={dataVideo[this.props.match.params.id - 1]}
+                            <ReactYoutube key={dataVideo[this.props.match.params.id - 1]} videoId={dataVideo[this.props.match.params.id - 1]}
                             />
                         </div>
                         <div className="col-md-6">
                             <div style={{ marginTop: '10px', marginBottom: '20px', marginLeft: '100px', marginRight: '100px' }}>
-                                <Link className=" btn btn-primary text-center w-100" to="/Tutorial">
+                                <Link className=" btn btn-primary text-center" to="/Tutorial">
                                     กลับไปที่คอร์ส
                                 </Link>
                             </div>

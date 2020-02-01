@@ -12,11 +12,11 @@ class Cardcontent extends Component {
             <div className="col-lg-4">
                 <div className="wrap-card-img my-5" >
                     <div className="shadows">
-                        <Card>
+                        <Card >
                             <NavLink className="wrapper-card-img " to={`VideoDetail/${id_detial}`}>
                                 <CardImg className="card-img-top text-center" src={imgSrc} alt="Card image cap" />
                             </NavLink>
-                            <CardBody className="text-center" style={{height: '20vh'}}> 
+                            <CardBody className="text-center" style={{height: '25vh'}}> 
                                 <CardTitle className="text-center">
                                     <h2>
                                         {title}
@@ -27,8 +27,8 @@ class Cardcontent extends Component {
                                     {sTitle}
                                 </CardSubtitle>
                             </CardBody>
-                                <div  style={{marginTop:'30px',marginBottom:'20px',marginLeft:'100px',marginRight:'100px' }}>
-                                    <Link className=" btn btn-primary text-center w-100" to={`/VideoDetail/${id_detial}`}>
+                                <div  style={{marginTop:'30px',marginBottom:'20px' , marginLeft:'25%' }}>
+                                    <Link className=" btn btn-primary text-center w-75 " to={`/VideoDetail/${id_detial}`}>
                                     ชมวีดีโอ
                                 </Link>
                                 </div>

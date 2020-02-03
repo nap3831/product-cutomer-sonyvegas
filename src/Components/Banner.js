@@ -43,7 +43,7 @@ class Banner extends Component {
                 </div >
                 <div className="col-12 my-5">
                     {!isTrue &&
-                    <Music sound={sound} /> 
+                        <Music sound={sound} />
                     }
                 </div >
             </React.Fragment>

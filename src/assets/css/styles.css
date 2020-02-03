@@ -5,7 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Kanit;
-}
+  }
+  .size-text{
+    font-size: 30px;
+  }
 
 @font-face {
     font-family: "Kanit";
@@ -52,19 +55,22 @@
     padding: 1px 16px;
     height: 1000px;
   }
+  .HideExamNumber{
+    display: none;
+  }
   @media (min-width: 1000px) { 
     .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{
      padding:0 140px !important ;
    }
  
-   }  
+}  
   
   @media(max-width: 1199.98px) {
     .sidebar {
       height: auto;
       position: relative;
     }
-    .sidebar a {float: left; font-size: 12px ;}
+    .sidebar a  {float: left; font-size: 12px ;}
     div.content {margin-left: 0;}
     .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{
       margin-left:150px !important ;

@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import Tutorial from './Pages/Tutorial';
 import About from './Pages/About';
 import History from './Pages/History';
+import Exam from './Pages/Exam';
 import VideoDetail from './Pages/VideoDetail';
 import NavigationBar from './Components/NavigationBar';
 import Banner from './Components/Banner';
@@ -31,6 +32,7 @@ class App extends Component {
               <Route path="/About" component={About} />
               <Route path="/History" component={History} />
               <Route path="/VideoDetail/:id" component={VideoDetail} />
+              <Route path="/Exam" component={Exam} />
             </Switch>
           </div>
         </BrowserRouter>

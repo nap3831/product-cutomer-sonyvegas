@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class Music extends Component {
     componentDidMount() {
         var audio = document.getElementById("myaudio");
-        audio.volume = 0.17;
+        audio.volume = 0.43;
     }
     render() {
         return (
@@ -14,7 +14,6 @@ class Music extends Component {
                                 <audio id="myaudio"
                                     autoPlay={"true"}
                                     controls
-                                    volume="0.2"
                                     loop
                                     src={this.props.sound}>
                                 </audio>
@@ -28,4 +27,3 @@ class Music extends Component {
 }
 
 export default (Music);
-

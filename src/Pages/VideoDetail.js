@@ -24,7 +24,7 @@ class VideoDetail extends Component {
             <React.Fragment>
                 <div className="container container-tutorial-video mb-5">
                     <div className="topMargin row">
-                        <div className="col-12 my-5 text-success">
+                        <div className="col-12 size-text my-5 text-success">
                         ขณะนี้กำลังชมวีดีโอ <span style={{borderBottom:'2px dashed red',width:'20px'}}>ตอนที่ {this.props.match.params.id} </span>   
                         </div>
                         <div className="col-md-6">

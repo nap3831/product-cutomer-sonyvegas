@@ -20,11 +20,11 @@ class History extends Component {
                 <div className="container text-center mb-5">
                     <div className="topMargin row container-history">
                         <div className="col-12">
-                            <h1 style={{ borderBottom: '2px solid orange' }}>
+                        <h1  style={{ borderBottom: '2px solid orange',fontSize:'50px' }}>
                                 ประวัติความเป็นมา
                         </h1>
                         <div className="col-12 my-2">
-                                <h5 className="my-5 text-left"><u>Vegas หรือ ชื่อเต็ม คือ Sony Vegas คืออะไร ?</u></h5>
+                                <h5 className="my-5 text-left size-text"><u>Vegas หรือ ชื่อเต็ม คือ Sony Vegas คืออะไร ?</u></h5>
                             </div>
                             <span className="lead">
                                 โปรแกรมตัดต่อวิดีโอบนระบบปฏิบัติการWindows มีชื่อเสียง ตัวหนึ่ง เนื่องจากมีราคาแพง ประมาณ400-600 USD นับตั้งแต่รุ่น 2มา (ไม่ใช่ vegas movie studio ที่ตัดความสามารถออก <p />

@@ -18,6 +18,7 @@ class NavigationBar extends Component {
                             <NavLink className="mt-5 pt-3 " to="/Tutorial">วีดีโอสอน</NavLink>
                             <NavLink className="mt-5 pt-3 " to="/About">เกี่ยวกับเรา</NavLink>
                             <NavLink className="mt-5 pt-3 " to="/History">ประวัติความเป็นมา</NavLink>
+                            <NavLink className="mt-5 pt-3 " to="/Exam">ทำแบบทดสอบ</NavLink>
                         </div>
                     </div>
             </React.Fragment>

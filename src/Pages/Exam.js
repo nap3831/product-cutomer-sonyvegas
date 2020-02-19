@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-
 class Exam extends Component {
     constructor(props) {
         super(props)
@@ -37,13 +35,13 @@ class Exam extends Component {
         this.handleDisableAfterChooseChoice(e);
     }
     render() {
-        console.log(this.state.counter);
+        console.log(this.state.currentChoice);
 
         return (
             <div className="container  mx-auto my-5">
                 <div className="row my-5 ">
                     <div className="col-12">
-                        <h3 style={{ borderBottom: '2px solid #ff0000' }}>แบบทดสอบหลังการดูวีดีโอ</h3>
+                        <h3 style={{ borderBottom: '2px solid #ff0000',textAlign:'center' }}>แบบทดสอบหลังการดูวีดีโอ</h3>
                     </div>
                     <div className="col-12">
                         <div className="container">
@@ -159,7 +157,7 @@ class Exam extends Component {
                                     </button>
                                     </div>
                                 </div>
-                                <div cla pl-autossName={`lead col-12 ${this.state.currentChoice[6] === "7" && "HideExamNumber"}`}>
+                                <div className={`lead col-12 ${this.state.currentChoice[6] === "7" && "HideExamNumber"}`}>
                                     7.) Layer คืออะไร ?
                             <div>
                                         <button className="btn btn-success m-2" value="7" style={{ fontSize: '18px' }} onClick={this.handdleChoice(true)}>
@@ -262,9 +260,9 @@ class Exam extends Component {
 
                             <div className="row">
                                 <div className="col-12 text-right lead">
-                                    <h5 className="text-danger"><span className="text-success">คุณได้คะแนนทั้งหมด</span> : {this.state.counter == 11 ? this.state.score : 'คะแนนจะไม่ปรากฎจนกว่าจะทำครบทุกข้อ'} / 11</h5>
+                                    <h5 className="text-danger"><span className="text-success">คุณได้คะแนนทั้งหมด</span> : {this.state.counter === 11 ? this.state.score : 'คะแนนจะไม่ปรากฎจนกว่าจะทำครบทุกข้อ'} / 11</h5>
                                 </div>
-                                {this.state.counter == 11 &&
+                                {this.state.counter === 11 &&
                                     <a className="btn btn-primary text-right d-block ml-auto" href="/Exam">เริ่มทำแบบฝึกหัดอีกครั้ง</a>
                                 }
 

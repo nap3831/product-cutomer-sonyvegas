@@ -63,11 +63,8 @@
     margin: 0 auto;
     display:block;
   }
-  .container-exam{
-    position: relative;
-    margin-left: 150px;
-    left: 50%;
-    transform: translateX(-53%)
+  .btn{
+    width: 50%;
   }
   @media (min-width: 1000px) { 
     .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{

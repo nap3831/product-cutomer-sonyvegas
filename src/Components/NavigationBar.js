@@ -12,7 +12,7 @@ class NavigationBar extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="col-3">
+                <div className="col-lg-3 col-12">
                         <div className="sidebar">
                             <NavLink className="mt-5 pt-3" to="/Home">หน้าหลัก</NavLink>
                             <NavLink className="mt-5 pt-3 " to="/Tutorial">วีดีโอสอน</NavLink>

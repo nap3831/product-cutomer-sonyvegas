@@ -17,7 +17,7 @@ class About extends Component {
                             <h1 style={{ borderBottom: '2px solid orange', fontSize: '50px' }}>
                                 เกี่ยวกับฉัน
                         </h1>
-                            <img className="img-responsive my-5" src="https://scontent.fbkk13-1.fna.fbcdn.net/v/t1.0-9/s960x960/43734136_1407963592673181_5417067458160754688_o.jpg?_nc_cat=108&_nc_oc=AQlF83n-FlLY0oOeGNzh6xXic_ZczGUy2j66dRuqUC4Bj6y6ZlKy4xB6mcpJTzHYt3E&_nc_ht=scontent.fbkk13-1.fna&oh=2071635d2ac1cd43f7dfb1f86a971615&oe=5E8976D5" alt="photome" width="30%" />
+                            <img className="img-responsive img-profile my-5" src="https://scontent.fbkk13-1.fna.fbcdn.net/v/t1.0-9/s960x960/43734136_1407963592673181_5417067458160754688_o.jpg?_nc_cat=108&_nc_oc=AQlF83n-FlLY0oOeGNzh6xXic_ZczGUy2j66dRuqUC4Bj6y6ZlKy4xB6mcpJTzHYt3E&_nc_ht=scontent.fbkk13-1.fna&oh=2071635d2ac1cd43f7dfb1f86a971615&oe=5E8976D5" alt="photome" width="30%" />
                         </div >
                         <div className="col-md-4  col-12" style={{ width: '100%' }}>
                             <FontAwesomeIcon size="5x"

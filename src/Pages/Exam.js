@@ -40,12 +40,12 @@ class Exam extends Component {
         console.log(this.state.counter);
 
         return (
-            <div className="container my-5">
+            <div className="container my-5 container-exam">
                 <div className="row my-5 ">
                     <div className="col-12 text-center">
                         <h3 style={{ borderBottom: '2px solid #ff0000' }}>แบบทดสอบหลังการดูวีดีโอ</h3>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[0] === "1" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[0] === "1" && "HideExamNumber"}`}>
                         1.) Sony Vegas วางตลาดครั้งแรกในวันที่เท่าไหร่ ?
                             <div>
                             <button className="btn btn-success m-2" value="1" style={{ fontSize: '18px' }} onClick={this.handdleChoice(true)}>
@@ -63,7 +63,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[1] === "2" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[1] === "2" && "HideExamNumber"}`}>
                         2.) Menu Bar คืออะไร?
                             <div>
                             <button className="btn btn-success m-2" value="2" style={{ fontSize: '18px' }} onClick={this.handdleChoice(false)}>
@@ -81,7 +81,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[2] === "3" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[2] === "3" && "HideExamNumber"}`}>
                         3.)	Tool Bar คืออะไร?
                             <div>
                             <button className="btn btn-success m-2" value="3" style={{ fontSize: '18px' }} onClick={this.handdleChoice(false)}>
@@ -100,7 +100,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[3] === "4" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[3] === "4" && "HideExamNumber"}`}>
                         4.) Support Windows ใช้ทำอะไร ?
                             <div>
                             <button className="btn btn-success m-2" value="4" style={{ fontSize: '18px' }} onClick={this.handdleChoice(true)}>
@@ -119,7 +119,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[4] === "5" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[4] === "5" && "HideExamNumber"}`}>
                         5.) การสร้าง Title ในโปรแกรมสามารถทำได้กี่วิธี ?
                             <div>
                             <button className="btn btn-success m-2" value="5" style={{ fontSize: '18px' }} onClick={this.handdleChoice(false)}>
@@ -137,7 +137,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[5] === "6" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[5] === "6" && "HideExamNumber"}`}>
                         6.) จากข้อ 5.) มีอะไรบ้าง ?
                             <div>
                             <button className="btn btn-success m-2" value="6" style={{ fontSize: '18px' }} onClick={this.handdleChoice(true)}>
@@ -156,7 +156,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[6] === "7" && "HideExamNumber"}`}>
+                    <div cla pl-autossName={`lead col-12 ${this.state.currentChoice[6] === "7" && "HideExamNumber"}`}>
                         7.) Layer คืออะไร ?
                             <div>
                             <button className="btn btn-success m-2" value="7" style={{ fontSize: '18px' }} onClick={this.handdleChoice(true)}>
@@ -174,7 +174,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[7] === "8" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[7] === "8" && "HideExamNumber"}`}>
                         8.) Mixer คืออะไร ?
                             <div>
                             <button className="btn btn-success m-2" value="8" style={{ fontSize: '18px' }} onClick={this.handdleChoice(false)}>
@@ -192,7 +192,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[8] === "9" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[8] === "9" && "HideExamNumber"}`}>
                         9.) Status Bar  คืออะไร ?
                             <div>
                             <button className="btn btn-success m-2" value="9" style={{ fontSize: '18px' }} onClick={this.handdleChoice(false)}>
@@ -210,7 +210,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[9] === "10" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[9] === "10" && "HideExamNumber"}`}>
                         10.) การสร้างวีดิทัศน์ประกอบด้วยอะไรบ้าง
                             <div>
                             <button className="btn btn-success m-2" value="10" style={{ fontSize: '18px' }} onClick={this.handdleChoice(false)}>
@@ -234,7 +234,7 @@ class Exam extends Component {
                                     </button>
                         </div>
                     </div>
-                    <div className={`lead col-12 ${this.state.currentChoice[10] === "11" && "HideExamNumber"}`}>
+                    <div className={`lead col-12 pl-auto ${this.state.currentChoice[10] === "11" && "HideExamNumber"}`}>
                         11.) ชนิดของวิดีโอที่ใช้งานอยู่ในปัจจุบันสามารถแบ่งได้เป็นกี่ชนิด อะไรบ้าง
                 <div>
                             <button className="btn btn-success m-2" value="11" style={{ fontSize: '18px' }} onClick={this.handdleChoice(true)}>

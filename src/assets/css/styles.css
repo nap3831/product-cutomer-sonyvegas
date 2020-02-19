@@ -32,6 +32,7 @@
   .sidebar a {
     display: block;
     color: black;
+    width: 100%;
     padding: 16px;
     text-align: center;
     text-decoration: none;
@@ -58,10 +59,27 @@
   .HideExamNumber{
     display: none;
   }
+  .img-profile{
+    margin: 0 auto;
+    display:block;
+  }
+  .container-exam{
+    position: relative;
+    margin-left: 150px;
+    left: 50%;
+    transform: translateX(-53%)
+  }
   @media (min-width: 1000px) { 
     .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{
-     padding:0 140px !important ;
-   }
+     padding:0 80px !important ;
+      text-align: left;
+    }
+    .container-tutorial h5,.container-tutorial-video h5,.container-home h5,.container-history h5{
+      text-align: left !important;
+    }
+    .container-tutorial h1,.container-tutorial-video h1,.container-home h1,.container-about h1,.col-md-4,.container-history h1{
+      text-align: center;
+    }
  
 }  
   
@@ -89,19 +107,19 @@
   }
   
   
-  @media (max-width: 400px) {
+  @media (max-width: 575.98px) {
+    .sidebar {
+      width: 100%;
+    }
     .sidebar a {
       text-align: center;
-      float: none;}
-            .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{
-              margin-left: auto !important;
-            }
-          }
-  @media (max-width: 375px) {
-            .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{
-              margin-left: 0 !importantว}
-  }
-
+      float: none;
+    }
+  .container-tutorial,.container-tutorial-video,.container-home,.container-about,.container-history{
+      margin-left: auto !important;
+            
+      }
+    }
 
   .wrapper-card-img{
     position: relative; 
